@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <title></title>
+    <link rel="stylesheet" href="../public/css/neat.css"/>
+    <link rel="stylesheet" href="../public/css/my_common.css"/>
+    <link rel="stylesheet" href="../public/css/swiper.min.css">
+    <link rel="stylesheet" href="css/my_center.css"/>
+    <script>
+        (function (doc, win) {
+            var docEl = doc.documentElement,
+                    resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+                    recalc = function () {
+                        var clientWidth = docEl.clientWidth;
+                        if (!clientWidth) return;
+                        docEl.style.fontSize = 20 * (clientWidth / 320) + 'px';
+                    };
+            if (!doc.addEventListener) return;
+            win.addEventListener(resizeEvt, recalc, false);
+            doc.addEventListener('DOMContentLoaded', recalc, false);
+        })(document, window);
+    </script>
+</head>
+<body>
+    <header>
+        <i class="setting-icon"></i>
+        <h1 class="header-title">我的</h1>
+        <i class="mes-icon"></i>
+    </header>
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">    <!--必须包有这层，滚动才会生效-->
+                <div class="my-info">
+                    <div class="unregistered">   <!--未登录注册时的结构-->
+                        <i class="person-icon"></i>
+                        <p>注册/登录</p>
+                    </div>
+                    <div class="registered">     <!--已登录注册时的结构-->
+                        <div class="personal-img">
+                            <img src="img/person.jpg" alt="" class="person-img"/>
+                        </div>
+                        <p class="person-name">小黄人</p>
+                    </div>
+                </div>
+                <div class="my-order">
+                    <div class="option clearfix">
+                        <span>我的订单</span>
+                        <div>
+                            <span>查看全部订单</span>
+                            <i class="right-icon"></i>
+                        </div>
+                    </div>
+                    <div class="order-sort">
+                        <div><i class="coin-icon"></i><p>待付款</p></div>
+                        <div><i class="truck-icon"></i><p>待收货</p></div>
+                        <div><i class="complete-icon"></i><p>已完成</p></div>
+                    </div>
+                </div>
+                <div class="my-message">
+                    <div class="option clearfix">
+                        <span>我的信息</span>
+                        <div>
+                            <i class="right-icon"></i>
+                        </div>
+                    </div>
+                    <div class="order-sort">
+                        <div><i class="person-icon"></i><p>个人信息</p></div>
+                        <div><i class="location-icon"></i><p>收货地址</p></div>
+                        <div><i class="lock-icon"></i><p>修改密码</p></div>
+                    </div>
+                </div>
+                <div class="option clearfix">
+                    <span>我的消息</span>
+                    <div>
+                        <i class="right-icon"></i>
+                    </div>
+                </div>
+                <div class="option clearfix">
+                    <span>帮助反馈</span>
+                    <div>
+                        <i class="right-icon"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="swiper-scrollbar"></div>
+    </div>
+    <footer>
+        <div class="footer-item">
+            <i class="index-icon "></i>
+            <span class="icon-word">首页</span>
+        </div>
+        <div class="footer-item">
+            <i class="sort-icon"></i>
+            <span class="icon-word">分类</span>
+        </div>
+        <div class="footer-item">
+            <i class="shopping-car-icon"></i>
+            <span class="icon-word">购物车</span>
+        </div>
+        <div class="footer-item active">
+            <i class="user-icon"></i>
+            <span class="icon-word">我的</span>
+        </div>
+    </footer>
+    <script src="../public/js/jquery.js"></script>
+    <script src="../public/js/swiper.min.js"></script>
+    <script src="js/my_center.js"></script>
+</body>
+</html>

@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <title></title>
+    <link rel="stylesheet" href="public/css/neat.css"/>
+    <link rel="stylesheet" href="public/css/my_common.css"/>
+    <link rel="stylesheet" href="public/css/swiper.min.css">
+    <link rel="stylesheet" href="sort/css/sort.css"/>
+    <script>
+        (function (doc, win) {
+            var docEl = doc.documentElement,
+                    resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+                    recalc = function () {
+                        var clientWidth = docEl.clientWidth;
+                        if (!clientWidth) return;
+                        docEl.style.fontSize = 20 * (clientWidth / 320) + 'px';
+                    };
+            if (!doc.addEventListener) return;
+            win.addEventListener(resizeEvt, recalc, false);
+            doc.addEventListener('DOMContentLoaded', recalc, false);
+        })(document, window);
+    </script>
+</head>
+<body class="sort-body">
+    <header class="sort-header">
+        <i class="return-btn"></i>
+        <div class="search-box">
+            <i class="search-icon"></i>
+            <input type="text" class="search-input" placeholder="搜索商品/店铺"/>
+        </div>
+    </header>
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">    <!--必须包有这层，滚动才会生效-->
+                <div class="sort-item">
+                    <div class="sort-item-title">
+                        <img src="sort/img/rh.png" alt=""/>
+                        <span>日化用品</span>
+                    </div>
+                    <ul class="sort-list">
+                        <li>全部</li>
+                        <li>护发素</li>
+                        <li>牙刷</li>
+                        <li>牙膏</li>
+                        <li>香皂</li>
+                        <li>洗衣液</li>
+                        <li>肥皂</li>
+                        <li>沐浴露</li>
+                        <li>洗衣粉</li>
+                    </ul>
+                </div>
+                <div class="sort-item">
+                    <div class="sort-item-title">
+                        <img src="sort/img/my.png" alt=""/>
+                        <span>母婴</span>
+                    </div>
+                    <ul class="sort-list">
+                        <li>全部</li>
+                        <li>奶瓶</li>
+                        <li>面条粥</li>
+                        <li>湿巾</li>
+                        <li>尿不湿</li>
+                        <li>儿童床</li>
+                        <li>学步车</li>
+                    </ul>
+                </div>
+                <div class="sort-item">
+                    <div class="sort-item-title">
+                        <img src="sort/img/bj.png" alt=""/>
+                        <span>保健品</span>
+                    </div>
+                    <ul class="sort-list">
+                        <li>全部</li>
+                        <li>美容养颜</li>
+                        <li>调节三高</li>
+                        <li>缓解疲劳</li>
+                        <li>睡眠</li>
+                        <li>美体塑身</li>
+                        <li>骨骼健康</li>
+                    </ul>
+                </div>
+                <div class="sort-item">
+                    <div class="sort-item-title">
+                        <img src="sort/img/tw.png" alt=""/>
+                        <span>调味品</span>
+                    </div>
+                    <ul class="sort-list">
+                        <li>全部</li>
+                        <li>酱油</li>
+                        <li>醋</li>
+                    </ul>
+                </div>
+                <div class="sort-item">
+                    <div class="sort-item-title">
+                        <img src="sort/img/ms.png" alt=""/>
+                        <span>美食</span>
+                    </div>
+                    <ul class="sort-list">
+                        <li>全部</li>
+                        <li>蔬菜</li>
+                        <li>海鲜</li>
+                        <li>水果</li>
+                    </ul>
+                </div>
+                <div class="sort-item">
+                    <div class="sort-item-title">
+                        <img src="sort/img/sh.png" alt=""/>
+                        <span>品质生活</span>
+                    </div>
+                    <ul class="sort-list">
+                        <li>全部</li>
+                        <li>钢琴</li>
+                        <li>小提琴</li>
+                    </ul>
+                </div>
+                <div class="sort-item">
+                    <div class="sort-item-title">
+                        <img src="sort/img/zy.png" alt=""/>
+                        <span>自营</span>
+                    </div>
+                    <ul class="sort-list">
+                        <li>全部</li>
+                        <li>奶瓶</li>
+                        <li>面条粥</li>
+                        <li>湿巾</li>
+                        <li>尿不湿</li>
+                        <li>儿童床</li>
+                        <li>学步车</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="swiper-scrollbar"></div>
+    </div>
+    <footer>
+        <div class="footer-item">
+            <i class="index-icon "></i>
+            <span class="icon-word">首页</span>
+        </div>
+        <div class="footer-item active">
+            <i class="sort-icon"></i>
+            <span class="icon-word">分类</span>
+        </div>
+        <div class="footer-item">
+            <i class="shopping-car-icon"></i>
+            <span class="icon-word">购物车</span>
+        </div>
+        <div class="footer-item">
+            <i class="user-icon"></i>
+            <span class="icon-word">我的</span>
+        </div>
+    </footer>
+    <script src="public/js/jquery.js"></script>
+    <script src="public/js/swiper.min.js"></script>
+    <script src="sort/js/sort.js"></script>
+</body>
+</html>
